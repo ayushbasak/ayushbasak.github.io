@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang = "en-US">
+<meta charset = "UTF-8">
+<link rel = "shortcut icon" type = "x-icon" href= "images\m.ico"/>
+<!-- Website compiled by Ayush Basak-->
+<title>Muzo - The Indian Sound Paradise</title>
+
+<head></head>
+<!-- BODY-->
+<style>
+html{
+scroll-behavior:smooth;
+}
+body{
+width:1000px;
+height:1300px;
+background-image:linear-gradient(to bottom right, cyan, blue);
+}
+</style>
+<!--SCROLL-->
+<style>
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  }
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(45,100,200,0.5); 
+  transition: background 0.2s;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(150,100,200,0.8); 
+}
+</style>
+<!-- HEADING-->
+<style>
+.heading{
+display:block;
+width:auto;height:auto;
+-webkit-user-select:none;
+padding:10px;margin:10px;
+text-align:center;
+color:#ffffff;
+font-size:50px;
+transition:font-size 0.2s;
+font-family:Product Sans Regular;
+}.heading:hover{font-size:55px;}
+#salt{
+font-size:20px;
+}
+
+</style>
+<!-- IMAGES-->
+<style>
+.div2{
+text-align:center;
+display:block;
+margin:auto;
+}
+.img{
+outline:none;
+cursor:pointer;
+opacity:0.5;
+-webkit-user-select:none;
+padding:10px;
+width:30%;
+height:auto;
+transition: opacity 0.4s;
+}.img:hover{
+opacity:1;
+}#a2{
+height:170px;
+}
+
+</style>
+<!-- BUTTONS-->
+<style>
+.pace{
+text-align:center;
+display:block;
+margin:auto;
+padding:20px;
+-webkit-user-select:none;
+}
+.favs button{
+width:300px;height:80px;
+}
+.favs{
+width:200px;height:80px;
+font-size:30px;
+font-family:Product Sans Regular; 
+color:white;
+background-image:linear-gradient(to bottom right,#00ffbb,#0ab455);
+border:none;
+outline:none;
+cursor:pointer;
+transition: background-image 2s,height 0.1s;
+}
+.favs:hover{
+height:100px;
+background-image:linear-gradient(to bottom right,#00d4ff,#00ffbb);
+}
+</style>
+<!-- COPYRIGHT TEXT-->
+<style>
+
+#abc{
+-webkit-user-select:none;
+padding:40px 0px 0px 0px;
+text-align:center;
+font-family:Product Sans Regular;
+color:white;
+font-size:20px;
+}
+</style>
+<!-- TOP SCROLLING -->
+<style>
+#scroll{
+display:block;
+margin:auto;
+font-size:30px;
+width:100px;height:100px;
+font-family:Product Sans Regular;
+color:white;
+border-radius:40px;
+background-color:#ff9900;
+outline:none;
+border:none;
+transition:width 0.3s,border-top 0.3s;
+}#scroll:hover{
+width:200px;
+border-top:solid white 2px;
+}
+</style>
+
+
+<body>
+<div class = "heading">
+<a href = "C:\users\fallout\desktop\muzo\muzo.html" style = "color:white;text-decoration:none;"></strong>Muzo</strong></a>
+</div>
+<svg height="50" width="500" style = "display:block;margin:auto;">
+  <line x1="0" y1="30" x2="2000" y2="30" style="stroke:white;stroke-width:6" />
+</svg>
+<p style = "height:50px;" id = "salt" class = "heading">The Indian Sound Paradise</p>
+
+<div id = "audiotags">
+
+<audio id = "aud1">
+<!-- AUDIO comes here-->
+<source src = "sounds\rail.mp3" type = "audio/mp3">
+</audio>
+<audio id = "aud2">
+<source src = "sounds\cafe.mp3" type = "audio/mp3">
+</audio>
+<audio id = "aud3">
+<source src = "sounds\stream.mp3" type = "audio/mp3">
+</audio>
+<audio id = "aud4">
+<source src = "sounds\rain.mp3" type = "audio/mp3">
+</audio>
+<audio id = "aud5">
+<source src = "sounds\city.mp3" type = "audio/mp3">
+</audio>
+<audio id = "aud6">
+<source src = "sounds\library.mp3" type = "audio/mp3">
+</audio>
+
+
+
+
+</div>
+
+<div class = "div2">
+<!-- images come here-->
+<img class = "img" id = "a1" src = "images\rail.png" onclick = "func('aud1','a1')">
+<img class = "img" id = "a2" src = "images\cafe.png" onclick = "func('aud2','a2')"><br>
+<img class = "img" id = "a3" src = "images\stream.png" onclick = "func('aud3','a3')">
+<img class = "img" id = "a4" src = "images\rain.png" onclick = "func('aud4','a4')"><br>
+<img class = "img" id = "a5" src = "images\city.png" onclick = "func('aud5','a5')">
+<img class = "img" id = "a6" src = "images\library.png" onclick = "func('aud6','a6')"><br>
+</div>
+
+<svg height="50" width="1000" style = "display:block;margin:auto;">
+  <line x1="30" y1="30" x2="2000" y2="30" style="stroke:white;stroke-width:6" />
+</svg>
+<div class = "pace">
+<!-- HYPERLINK comes here-->
+<button class = "favs"><a href = "https://www.facebook.com/ayush.basak.58" style ="color:white;text-decoration:none;">Facebook</a></button>
+<button class = "favs"><a href = "https://twitter.com/ayushbasak1" style ="color:white;text-decoration:none;">Twitter</a></button>
+<button class = "favs"><a href = "https://www.youtube.com/channel/UCKBhdAsPzGfxf5xrRup0RBw" style ="color:white;text-decoration:none;">Youtube</a></button>
+</div>
+<br>
+<p id  = "abc">audio source :  <b>zapslat.com</b><br>
+Thank You for your Visit
+</p>
+<br><br>
+<button id = "scroll" onclick = "topFunction()">top</button>
+<!-- IMAGE buttons-->
+<script>
+function func(vara,varb)
+{
+var d = document.getElementById(varb);
+var b = document.getElementById(vara);
+var c = document.getElementById(vara).paused;
+if(c == true){
+b.play();
+d.style.borderBottom = "thick solid white";
+}
+else{b.pause();
+d.style.border = "none";
+}
+}
+</script>
+<!-- TOP scrolling-->
+<script>
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+</body> 
+</html>
