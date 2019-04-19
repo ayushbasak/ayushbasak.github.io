@@ -32,7 +32,7 @@ background-image:linear-gradient(to bottom right, cyan, blue);
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: rgb(45,100,200,0.5); 
-  transition: background 0.2s;
+  transition: background 0.1s;
 }
 
 /* Handle on hover */
@@ -94,6 +94,7 @@ padding:20px;
 width:300px;height:80px;
 }
 .favs{
+opacity:0.5;
 width:200px;height:80px;
 font-size:30px;
 font-family:Product Sans Regular; 
@@ -102,10 +103,11 @@ background-image:linear-gradient(to bottom right,#00ffbb,#0ab455);
 border:none;
 outline:none;
 cursor:pointer;
-transition: background-image 2s,height 0.1s;
+transition: background-image 2s,width 0.1s,opacity 0.5s;
 }
 .favs:hover{
-height:100px;
+opacity:1;
+width:250px;
 background-image:linear-gradient(to bottom right,#00d4ff,#00ffbb);
 }
 </style>
@@ -134,9 +136,10 @@ border-radius:40px;
 background-color:#ff9900;
 outline:none;
 border:none;
+cursor:pointer;
 transition:width 0.3s,border-top 0.3s;
 }#scroll:hover{
-width:200px;
+width:400px;
 border-top:solid white 2px;
 }
 </style>
