@@ -12,9 +12,9 @@ html{
 scroll-behavior:smooth;
 }
 body{
-width:1000px;
-height:2000px;
-background-image:linear-gradient(to bottom right, cyan, blue);
+width:90%;
+height:200%;
+background-image:linear-gradient(to bottom right,#00e5da,#ce00c0);
 }
 </style>
 <!--SCROLL-->
@@ -182,7 +182,19 @@ width:400px;
 border-top:solid white 2px;
 }
 </style>
-
+<style>
+#exit{
+color:#ffffff;
+font-family:Product Sans Regular;
+font-size:15px;
+-webkit-user-select:none;
+text-align:center;
+cursor:none;
+transition:font-size 0.3s;
+}#exit:hover{
+font-size:18px;
+}
+</style>
 
 <body>
 <div class = "heading">
@@ -276,6 +288,7 @@ Thank You for your Visit
 </p>
 <br><br>
 <button id = "scroll" onclick = "topFunction()">top</button>
+<p id = "exit">A project by <Strong>Ayush Basak</strong></p>
 <!-- IMAGE buttons-->
 <script>
 function func(vara,varb)
