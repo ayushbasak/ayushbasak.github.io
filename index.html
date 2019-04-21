@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang = "en-US">
-<meta charset = "UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" charset = "UTF-8">
 <link rel = "shortcut icon" type = "x-icon" href= "images\m.ico"/>
 <!-- Website compiled by Ayush Basak-->
 <title>Muzo - The Indian Sound Paradise</title>
@@ -13,7 +13,7 @@ scroll-behavior:smooth;
 }
 body{
 width:1000px;
-height:1300px;
+height:2000px;
 background-image:linear-gradient(to bottom right, cyan, blue);
 }
 </style>
@@ -66,9 +66,10 @@ display:block;
 margin:auto;
 }
 .img{
+border-radius:20%;
 outline:none;
 cursor:pointer;
-opacity:0.5;
+opacity:0.8;
 -webkit-user-select:none;
 padding:10px;
 width:30%;
@@ -81,6 +82,44 @@ height:170px;
 }
 
 </style>
+
+<style>
+slidecontainer {
+  width: 100%; /* Width of the outside container */
+}
+
+.slider {
+margin:50px;
+  -webkit-appearance: none;  
+  appearance: none;
+  width: 150px; /* Full-width */
+  height: 5px; /* Specified height */
+  background: #ffffff; /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 0.8; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s,height 0.2s;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+ height: 6px;
+  opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */ 
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 30px; /* Set a specific slider handle width */
+  height: 10px; /* Slider handle height */
+  background: #ffff00; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+
+}
+</style>
+
 <!-- BUTTONS-->
 <style>
 .pace{
@@ -94,8 +133,8 @@ padding:20px;
 width:300px;height:80px;
 }
 .favs{
-opacity:0.5;
-width:200px;height:80px;
+opacity:0.8;
+width:208px;height:80px;
 font-size:30px;
 font-family:Product Sans Regular; 
 color:white;
@@ -107,7 +146,7 @@ transition: background-image 2s,width 0.1s,opacity 0.5s;
 }
 .favs:hover{
 opacity:1;
-width:250px;
+width:224px;
 background-image:linear-gradient(to bottom right,#00d4ff,#00ffbb);
 }
 </style>
@@ -156,26 +195,31 @@ border-top:solid white 2px;
 
 <div id = "audiotags">
 
-<audio id = "aud1">
+<audio id = "aud1" loop>
 <!-- AUDIO comes here-->
 <source src = "sounds\rail.mp3" type = "audio/mp3">
 </audio>
-<audio id = "aud2">
+<audio id = "aud2" loop>
 <source src = "sounds\cafe.mp3" type = "audio/mp3">
 </audio>
-<audio id = "aud3">
+<audio id = "aud3" loop>
 <source src = "sounds\stream.mp3" type = "audio/mp3">
 </audio>
-<audio id = "aud4">
+<audio id = "aud4" loop>
 <source src = "sounds\rain.mp3" type = "audio/mp3">
 </audio>
-<audio id = "aud5">
+<audio id = "aud5" loop>
 <source src = "sounds\city.mp3" type = "audio/mp3">
 </audio>
-<audio id = "aud6">
+<audio id = "aud6" loop>
 <source src = "sounds\library.mp3" type = "audio/mp3">
 </audio>
-
+<audio id = "aud7" loop>
+<source src = "sounds\sea.mp3" type = "audio/mp3">
+</audio>
+<audio id = "aud8" loop>
+<source src = "sounds\metro.mp3" type = "audio/mp3">
+</audio>
 
 
 
@@ -185,10 +229,36 @@ border-top:solid white 2px;
 <!-- images come here-->
 <img class = "img" id = "a1" src = "images\rail.png" onclick = "func('aud1','a1')">
 <img class = "img" id = "a2" src = "images\cafe.png" onclick = "func('aud2','a2')"><br>
+
+<div class="slidecontainer">
+  <input type="range" min="1" max="100" value="50" class="slider" id="range1" oninput = "func2('range1','aud1')">
+  <input type="range" min="1" max="100" value="50" class="slider" id="range2" oninput = "func2('range2','aud2')">
+</div>
+
 <img class = "img" id = "a3" src = "images\stream.png" onclick = "func('aud3','a3')">
 <img class = "img" id = "a4" src = "images\rain.png" onclick = "func('aud4','a4')"><br>
+
+<div class="slidecontainer">
+  <input type="range" min="1" max="100" value="50" class="slider" id="range3" oninput = "func2('range3','aud3')">
+  <input type="range" min="1" max="100" value="50" class="slider" id="range4" oninput = "func2('range4','aud4')">
+</div>
+
 <img class = "img" id = "a5" src = "images\city.png" onclick = "func('aud5','a5')">
 <img class = "img" id = "a6" src = "images\library.png" onclick = "func('aud6','a6')"><br>
+
+<div class="slidecontainer">
+  <input type="range" min="1" max="100" value="50" class="slider" id="range5" oninput = "func2('range5','aud5')">
+  <input type="range" min="1" max="100" value="50" class="slider" id="range6" oninput = "func2('range6','aud6')">
+</div>
+
+<img class = "img" id = "a7" src = "images\beach.png" onclick = "func('aud7','a7')">
+<img class = "img" id = "a8" src = "images\metro.png" onclick = "func('aud8','a8')"><br>
+
+<div class="slidecontainer">
+  <input type="range" min="1" max="100" value="50" class="slider" id="range7" oninput = "func2('range7','aud7')">
+  <input type="range" min="1" max="100" value="50" class="slider" id="range8" oninput = "func2('range8','aud8')">
+</div>
+
 </div>
 
 <svg height="50" width="1000" style = "display:block;margin:auto;">
@@ -196,9 +266,9 @@ border-top:solid white 2px;
 </svg>
 <div class = "pace">
 <!-- HYPERLINK comes here-->
-<button class = "favs"><a href = "https://www.facebook.com/ayush.basak.58" style ="color:white;text-decoration:none;">Facebook</a></button>
-<button class = "favs"><a href = "https://twitter.com/ayushbasak1" style ="color:white;text-decoration:none;">Twitter</a></button>
-<button class = "favs"><a href = "https://www.youtube.com/channel/UCKBhdAsPzGfxf5xrRup0RBw" style ="color:white;text-decoration:none;">Youtube</a></button>
+<button class = "favs"><a href = "https://www.facebook.com/ayush.basak.58"  target = "_blank"style ="color:white;text-decoration:none;">Facebook</a></button>
+<button class = "favs"><a href = "https://www.instagram.com/ayushbasak/" target = "_blank"style ="color:white;text-decoration:none;">Instagram</a></button>
+<button class = "favs"><a href = "https://soundcloud.com/abio_originals" target = "_blank"style ="color:white;text-decoration:none;">SoundCloud</a></button>
 </div>
 <br>
 <p id  = "abc">audio source :  <b>zapslat.com</b><br>
@@ -227,6 +297,14 @@ d.style.border = "none";
 function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
+}
+</script>
+<script><!-- not working currently-->
+function func2(vard,vare){
+var sli = document.getElementById(vard);
+var y = (sli.value/100.0);
+ var x = document.getElementById(vare);
+ x.volume = y;
 }
 </script>
 </body> 
