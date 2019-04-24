@@ -3,7 +3,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" charset = "UTF-8">
 <link rel = "shortcut icon" type = "x-icon" href= "images\m.ico"/>
 <!-- Website compiled by Ayush Basak-->
-<title>Muzo - The Indian Sound Paradise</title>
+<title>Muzo - Relaxing Background Ambience</title>
 
 <head></head>
 <!-- BODY-->
@@ -12,7 +12,11 @@ html{
 scroll-behavior:smooth;
 }
 body{
-width:90%;
+-webkit-user-select:none;
+margin:0px;
+padding:0;
+border:none;
+width:100%;
 height:200%;
 background-image:linear-gradient(to bottom right,#00e5da,#ce00c0);
 }
@@ -21,7 +25,8 @@ background-image:linear-gradient(to bottom right,#00e5da,#ce00c0);
 <style>
 /* width */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 15px;
+  
 }
 
 /* Track */
@@ -37,7 +42,7 @@ background-image:linear-gradient(to bottom right,#00e5da,#ce00c0);
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: rgb(150,100,200,0.8); 
+  background: #000000; 
 }
 </style>
 <!-- HEADING-->
@@ -46,15 +51,28 @@ background-image:linear-gradient(to bottom right,#00e5da,#ce00c0);
 display:block;
 width:auto;height:auto;
 -webkit-user-select:none;
-padding:10px;margin:10px;
+padding:10px;
 text-align:center;
 color:#ffffff;
 font-size:50px;
 transition:font-size 0.2s;
 font-family:Product Sans Regular;
-}.heading:hover{font-size:55px;}
+}
 #salt{
 font-size:20px;
+}
+#header{
+text-align:center;
+height:80px;
+padding:20px;
+  position:fixed;
+ width:100%;
+ transition:0.2s;
+ top:-10px;
+ z-index:10;
+font-family:Product Sans Regular;
+background-color:rgb(0,0,0,0.8);
+font-size:50px;
 }
 
 </style>
@@ -66,14 +84,12 @@ display:block;
 margin:auto;
 }
 .img{
-border-radius:20%;
 outline:none;
 cursor:pointer;
 opacity:0.8;
 -webkit-user-select:none;
-padding:10px;
 width:30%;
-height:auto;
+height:30%;
 transition: opacity 0.4s;
 }.img:hover{
 opacity:1;
@@ -89,11 +105,11 @@ slidecontainer {
 }
 
 .slider {
-margin:50px;
+margin:80px;
   -webkit-appearance: none;  
   appearance: none;
-  width: 150px; /* Full-width */
-  height: 5px; /* Specified height */
+  width: 230px; /* Full-width */
+  height: 2px; /* Specified height */
   background: #ffffff; /* Grey background */
   outline: none; /* Remove outline */
   opacity: 0.8; /* Set transparency (for mouse-over effects on hover) */
@@ -103,7 +119,7 @@ margin:50px;
 
 /* Mouse-over effects */
 .slider:hover {
- height: 6px;
+ height: 5px;
   opacity: 1; /* Fully shown on mouse-over */
 }
 
@@ -111,10 +127,14 @@ margin:50px;
 .slider::-webkit-slider-thumb {
   -webkit-appearance: none; /* Override default look */
   appearance: none;
+  border-radius:50%;
   width: 30px; /* Set a specific slider handle width */
-  height: 10px; /* Slider handle height */
-  background: #ffff00; /* Green background */
+  height: 30px; /* Slider handle height */
+  background: #ffcdef; /* Green background */
   cursor: pointer; /* Cursor on hover */
+}
+.slider::-webkit-slider-thumb:hover{
+background:#00ff00;
 }
 
 }
@@ -146,7 +166,7 @@ transition: background-image 2s,width 0.1s,opacity 0.5s;
 }
 .favs:hover{
 opacity:1;
-width:224px;
+border-bottom:solid #ff0000 4px;
 background-image:linear-gradient(to bottom right,#00d4ff,#00ffbb);
 }
 </style>
@@ -179,11 +199,11 @@ cursor:pointer;
 transition:width 0.3s,border-top 0.3s;
 }#scroll:hover{
 width:400px;
-border-top:solid white 2px;
+border:solid white 2px;
 }
 </style>
 <style>
-#exit{
+.exit{
 color:#ffffff;
 font-family:Product Sans Regular;
 font-size:15px;
@@ -191,19 +211,27 @@ font-size:15px;
 text-align:center;
 cursor:none;
 transition:font-size 0.3s;
-}#exit:hover{
+}.exit:hover{
 font-size:18px;
 }
 </style>
-
 <body>
-<div class = "heading">
-<a href = "https://ayushbasak.github.io" style = "color:white;text-decoration:none;"></strong>Muzo</strong></a>
+<div id = "header" style ="margin:0;">
+<a href = "https://ayushbasak.github.io" title = "Muzo - Reload" style = "color:White;text-decoration:none;"></strong>Muzo</strong></a>
 </div>
-<svg height="50" width="500" style = "display:block;margin:auto;">
-  <line x1="0" y1="30" x2="2000" y2="30" style="stroke:white;stroke-width:6" />
-</svg>
-<p style = "height:50px;" id = "salt" class = "heading">The Indian Sound Paradise</p>
+<pre>
+
+
+
+
+
+
+
+
+</pre>
+<div style = "margin:0;">
+
+<p style = "height:50px;" id = "salt" class = "heading">Relaxing Background Ambience</p>
 
 <div id = "audiotags">
 
@@ -239,32 +267,33 @@ font-size:18px;
 
 <div class = "div2">
 <!-- images come here-->
-<img class = "img" id = "a1" src = "images\rail.png" onclick = "func('aud1','a1')">
-<img class = "img" id = "a2" src = "images\cafe.png" onclick = "func('aud2','a2')"><br>
+<img class = "img" id = "a1" src = "images\rail.png" onclick = "func('aud1','a1')" title = "Train">
+&nbsp;
+<img class = "img" id = "a2" src = "images\cafe.png" onclick = "func('aud2','a2')" title = "Cafe"><br>
 
 <div class="slidecontainer">
   <input type="range" min="1" max="100" value="50" class="slider" id="range1" oninput = "func2('range1','aud1')">
   <input type="range" min="1" max="100" value="50" class="slider" id="range2" oninput = "func2('range2','aud2')">
 </div>
 
-<img class = "img" id = "a3" src = "images\stream.png" onclick = "func('aud3','a3')">
-<img class = "img" id = "a4" src = "images\rain.png" onclick = "func('aud4','a4')"><br>
+<img class = "img" id = "a3" src = "images\stream.png" onclick = "func('aud3','a3')" title = "Stream">
+&nbsp;<img class = "img" id = "a4" src = "images\rain.png" onclick = "func('aud4','a4')" title = "Rain and Thunder"><br>
 
 <div class="slidecontainer">
   <input type="range" min="1" max="100" value="50" class="slider" id="range3" oninput = "func2('range3','aud3')">
   <input type="range" min="1" max="100" value="50" class="slider" id="range4" oninput = "func2('range4','aud4')">
 </div>
 
-<img class = "img" id = "a5" src = "images\city.png" onclick = "func('aud5','a5')">
-<img class = "img" id = "a6" src = "images\library.png" onclick = "func('aud6','a6')"><br>
+<img class = "img" id = "a5" src = "images\city.png" onclick = "func('aud5','a5')" title = "City">
+&nbsp;<img class = "img" id = "a6" src = "images\library.png" onclick = "func('aud6','a6')" title = "Library"><br>
 
 <div class="slidecontainer">
   <input type="range" min="1" max="100" value="50" class="slider" id="range5" oninput = "func2('range5','aud5')">
   <input type="range" min="1" max="100" value="50" class="slider" id="range6" oninput = "func2('range6','aud6')">
 </div>
 
-<img class = "img" id = "a7" src = "images\beach.png" onclick = "func('aud7','a7')">
-<img class = "img" id = "a8" src = "images\metro.png" onclick = "func('aud8','a8')"><br>
+<img class = "img" id = "a7" src = "images\beach.png" onclick = "func('aud7','a7')" title = "Sea Beach">
+&nbsp;<img class = "img" id = "a8" src = "images\metro.png" onclick = "func('aud8','a8')" title = "Subway"><br>
 
 <div class="slidecontainer">
   <input type="range" min="1" max="100" value="50" class="slider" id="range7" oninput = "func2('range7','aud7')">
@@ -288,37 +317,44 @@ Thank You for your Visit
 </p>
 <br><br>
 <button id = "scroll" onclick = "topFunction()">top</button>
-<p id = "exit">A project by <Strong>Ayush Basak</strong></p>
+<p class = "exit">A project by <Strong>Ayush Basak</strong>
+<br>Completed <b>21 April 2019</b>
+<br><br>
+</p>
+<style>
+#nest{
+color:white;
+font-family:Product Sans Regular;
+text-align:center;}</style>
+<p id = "nest">
+<i>Last Edited </i>  24 April 2019<br>
+Visit my Github Repos <a href = "https://github.com/ayushbasak/" style = "color:yellow;text-decoration:none;">Here</a>
+</p>
+</div>
 <!-- IMAGE buttons-->
-<script>
-function func(vara,varb)
-{
-var d = document.getElementById(varb);
-var b = document.getElementById(vara);
-var c = document.getElementById(vara).paused;
-if(c == true){
-b.play();
-d.style.borderBottom = "thick solid white";
-}
-else{b.pause();
-d.style.border = "none";
-}
-}
+<script  src= "jsfiles/script1.js">
 </script>
 <!-- TOP scrolling-->
+<script src = "jsfiles/script2.js">
+</script>
+<script src = "jsfiles/script3.js">
+</script>
+
 <script>
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
+// When the user scrolls down 50px from the top of the document, resize the header's font size
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    var c = document.getElementById("header");
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+    c.style.fontSize = "20px";
+	c.style.height = "10px";
+  } else {
+    c.style.fontSize = "50px";
+   c.style.height = "80px";
+  }
 }
 </script>
-<script><!-- not working currently-->
-function func2(vard,vare){
-var sli = document.getElementById(vard);
-var y = (sli.value/100.0);
- var x = document.getElementById(vare);
- x.volume = y;
-}
-</script>
+
 </body> 
 </html>
