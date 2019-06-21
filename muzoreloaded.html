@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang = "en-US">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" charset = "UTF-8">
+<link rel = "shortcut icon" type = "x-icon" href= "images\m.ico"/>
+<!-- Website compiled by Ayush Basak-->
+<title>Muzo - The Indian Sound Paradise</title>
+
+<head></head>
+<!-- BODY-->
+<style>
+html{
+margin:none;
+scroll-behavior:smooth;
+}
+body{
+-webkit-user-select:none;
+width:90%;
+height:200%;
+background-image:linear-gradient(to bottom right,#00e5da,#ce00c0);
+}
+</style>
+<!--SCROLL-->
+<style>
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
+  
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  }
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(45,100,200,0.5); 
+  transition: background 0.1s;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #000000; 
+}
+</style>
+<!-- HEADING-->
+<style>
+.heading{
+display:block;
+width:auto;height:auto;
+-webkit-user-select:none;
+padding:20px;margin:40px;
+text-align:center;
+color:#ffffff;
+font-size:50px;
+transition:font-size 0.2s;
+font-family:Product Sans Regular;
+}
+#salt{
+font-size:20px;
+margin:50px;
+}
+
+</style>
+<!-- IMAGES-->
+<style>
+.div2{
+text-align:center;
+display:block;
+margin:auto;
+}
+.img{
+outline:none;
+cursor:pointer;
+opacity:0.8;
+-webkit-user-select:none;
+width:30%;
+height:30%;
+transition: opacity 0.4s;
+}.img:hover{
+opacity:1;
+}#a2{
+height:170px;
+}
+
+</style>
+
+<style>
+slidecontainer {
+  width: 100%; /* Width of the outside container */
+}
+
+.slider {
+margin:80px;
+  -webkit-appearance: none;  
+  appearance: none;
+  width: 230px; /* Full-width */
+  height: 2px; /* Specified height */
+  background: #ffffff; /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 0.8; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s,height 0.2s;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+ height: 5px;
+  opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */ 
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  border-radius:50%;
+  width: 30px; /* Set a specific slider handle width */
+  height: 30px; /* Slider handle height */
+  background: #abcdef; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+.slider::-webkit-slider-thumb:hover{
+background:#ffff00;
+}
+
+}
+</style>
+
+<!-- BUTTONS-->
+<style>
+.pace{
+text-align:center;
+display:block;
+margin:auto;
+padding:20px;
+-webkit-user-select:none;
+}
+.favs button{
+width:300px;height:80px;
+}
+.favs{
+opacity:0.8;
+width:208px;height:80px;
+font-size:30px;
+font-family:Product Sans Regular; 
+color:white;
+background-image:linear-gradient(to bottom right,#00ffbb,#0ab455);
+border:none;
+outline:none;
+cursor:pointer;
+transition: background-image 2s,width 0.1s,opacity 0.5s;
+}
+.favs:hover{
+opacity:1;
+border-bottom:solid #ff0000 4px;
+background-image:linear-gradient(to bottom right,#00d4ff,#00ffbb);
+}
+</style>
+<!-- COPYRIGHT TEXT-->
+<style>
+
+#abc{
+-webkit-user-select:none;
+padding:40px 0px 0px 0px;
+text-align:center;
+font-family:Product Sans Regular;
+color:white;
+font-size:20px;
+}
+</style>
+<!-- TOP SCROLLING -->
+<style>
+#scroll{
+display:block;
+margin:auto;
+font-size:30px;
+width:100px;height:100px;
+font-family:Product Sans Regular;
+color:white;
+border-radius:40px;
+background-color:#ff9900;
+outline:none;
+border:none;
+cursor:pointer;
+transition:width 0.3s,border-top 0.3s;
+}#scroll:hover{
+width:400px;
+border:solid white 2px;
+}
+</style>
+<style>
+.exit{
+color:#ffffff;
+font-family:Product Sans Regular;
+font-size:15px;
+-webkit-user-select:none;
+text-align:center;
+cursor:none;
+transition:font-size 0.3s;
+}.exit:hover{
+font-size:18px;
+}
+</style>
+
+<style>
+#pluto{
+position:fixed;
+top:0;
+left:0;
+right:0;
+z-index:+1;
+font-size:50px;
+text-align:center;
+margin:none;
+text-decoration:none;
+color:white;
+transition:0.1s;
+background:black;
+padding-top:30px;
+padding-bottom:30px;
+padding-left:45%;
+padding-right:45%;
+}
+#fixeddd{
+font-family:Product Sans Regular;
+display:block;
+margin:none;
+}
+</style>
+<body>
+<div id = "fixeddd">
+<a href = "https://ayushbasak.github.io/muzo"  id = "pluto"  title = "Muzo - Reload"></strong>Muzo</strong></a>
+</div>
+<div class = "heading">
+<p style = "height:50px;" id = "salt" class = "heading">Relaxing Ambience - The Art of Living</p>
+</div>
+<div id = "audiotags">
+
+<audio id = "aud1" loop>
+<!-- AUDIO comes here-->
+<source src = "sounds\rail.mp3" type = "audio/mp3">
+</audio>
+<audio id = "aud2" loop>
+<source src = "sounds\cafe.mp3" type = "audio/mp3">
+</audio>
+<audio id = "aud3" loop>
+<source src = "sounds\stream.mp3" type = "audio/mp3">
+</audio>
+<audio id = "aud4" loop>
+<source src = "sounds\rain.mp3" type = "audio/mp3">
+</audio>
+<audio id = "aud5" loop>
+<source src = "sounds\city.mp3" type = "audio/mp3">
+</audio>
+<audio id = "aud6" loop>
+<source src = "sounds\library.mp3" type = "audio/mp3">
+</audio>
+<audio id = "aud7" loop>
+<source src = "sounds\sea.mp3" type = "audio/mp3">
+</audio>
+<audio id = "aud8" loop>
+<source src = "sounds\metro.mp3" type = "audio/mp3">
+</audio>
+
+
+
+</div>
+
+<div class = "div2">
+<!-- images come here-->
+<img class = "img" id = "a1" src = "images\rail.png" onclick = "func('aud1','a1')" title = "Train">
+<img class = "img" id = "a2" src = "images\cafe.png" onclick = "func('aud2','a2')" title = "Cafe"><br>
+
+<div class="slidecontainer">
+  <input type="range" min="1" max="100" value="50" class="slider" id="range1" oninput = "func2('range1','aud1')">
+  <input type="range" min="1" max="100" value="50" class="slider" id="range2" oninput = "func2('range2','aud2')">
+</div>
+
+<img class = "img" id = "a3" src = "images\stream.png" onclick = "func('aud3','a3')" title = "Stream">
+<img class = "img" id = "a4" src = "images\rain.png" onclick = "func('aud4','a4')" title = "Rain and Thunder"><br>
+
+<div class="slidecontainer">
+  <input type="range" min="1" max="100" value="50" class="slider" id="range3" oninput = "func2('range3','aud3')">
+  <input type="range" min="1" max="100" value="50" class="slider" id="range4" oninput = "func2('range4','aud4')">
+</div>
+
+<img class = "img" id = "a5" src = "images\city.png" onclick = "func('aud5','a5')" title = "City">
+<img class = "img" id = "a6" src = "images\library.png" onclick = "func('aud6','a6')" title = "Library"><br>
+
+<div class="slidecontainer">
+  <input type="range" min="1" max="100" value="50" class="slider" id="range5" oninput = "func2('range5','aud5')">
+  <input type="range" min="1" max="100" value="50" class="slider" id="range6" oninput = "func2('range6','aud6')">
+</div>
+
+<img class = "img" id = "a7" src = "images\beach.png" onclick = "func('aud7','a7')" title = "Sea Beach">
+<img class = "img" id = "a8" src = "images\metro.png" onclick = "func('aud8','a8')" title = "Subway"><br>
+
+<div class="slidecontainer">
+  <input type="range" min="1" max="100" value="50" class="slider" id="range7" oninput = "func2('range7','aud7')">
+  <input type="range" min="1" max="100" value="50" class="slider" id="range8" oninput = "func2('range8','aud8')">
+</div>
+
+</div>
+
+<svg height="50" width="1000" style = "display:block;margin:auto;">
+  <line x1="30" y1="30" x2="2000" y2="30" style="stroke:white;stroke-width:6" />
+</svg>
+<div class = "pace">
+<!-- HYPERLINK comes here-->
+<button class = "favs"><a href = "https://www.facebook.com/ayush.basak.58"  target = "_blank"style ="color:white;text-decoration:none;">Facebook</a></button>
+<button class = "favs"><a href = "https://www.instagram.com/ayushbasak/" target = "_blank"style ="color:white;text-decoration:none;">Instagram</a></button>
+<button class = "favs"><a href = "https://soundcloud.com/abio_originals" target = "_blank"style ="color:white;text-decoration:none;">SoundCloud</a></button>
+</div>
+<br>
+<p id  = "abc">audio source :  <b>zapslat.com</b><br>
+Thank You for your Visit
+</p>
+<br><br>
+<button id = "scroll" onclick = "topFunction()">top</button>
+<p class = "exit">A project by <Strong>Ayush Basak</strong>
+<br>Completed <b>21 April 2019</b>
+</p>
+<!-- IMAGE buttons-->
+<script  src = "jsfiles/script1.js">
+</script>
+<!-- TOP scrolling-->
+<script src = "jsfiles/script2.js"></script>
+
+<script src = "jsfiles/script3.js"></script>
+
+<script src = "jsfiles/script4.js"></script>
+</body> 
+</html>
