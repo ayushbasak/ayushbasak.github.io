@@ -27,11 +27,21 @@ html,body{
 
 #imageTOP{
     
-	 background: url('images/hd.jpg') no-repeat center;
+	 background:cyan;
 	 background-size:cover;
-	 height:400px;
+	 height:400px; 
+	animation: example34 10s infinite;
 }
 
+
+@keyframes example34{
+0% {background: cyan;}
+20% {background: red;}
+30% {background: black;}
+50% {background: blue;}
+80% {background: green;}
+100% {background: pink;}
+}
 .topnav {
 	-webkit-user-select:none;
 	cursor:pointer;
