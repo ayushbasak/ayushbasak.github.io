@@ -27,9 +27,9 @@ html,body{
 
 #imageTOP{
     
-	 background:cyan;
+	 background-color:cyan;
 	 background-size:cover;
-	 height:400px; 
+        height:400px; 
 	animation-name:example34;
 	animation-duration:10s; 
 	animation-iteration-count:infinite;
@@ -38,12 +38,12 @@ html,body{
 
 
 @keyframes example34{
-0% {background: cyan;}
-20% {background: red;}
-30% {background: black;}
-50% {background: blue;}
-80% {background: green;}
-100% {background: pink;}
+0% {background-color: cyan;}
+20% {background-color: red;}
+30% {background-color: black;}
+50% {background-color: blue;}
+80% {background-color: green;}
+100% {background-color: pink;}
 }
 .topnav {
 	-webkit-user-select:none;
