@@ -30,7 +30,10 @@ html,body{
 	 background:cyan;
 	 background-size:cover;
 	 height:400px; 
-	animation: example34 10s infinite;
+	animation-name:example34;
+	animation-duration:10s; 
+	animation-iteration-count:infinite;
+	
 }
 
 
