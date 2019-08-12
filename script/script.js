@@ -8,7 +8,7 @@ function scrollFunction() {
 	var goTOPbutton = document.getElementById("goTOP");
   if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
     x.style.fontSize = "20px";
-	x.style.padding = "5px";
+	x.style.padding = "10px";
 	goTOPbutton.style.display = "block";
   } else {
     x.style.fontSize = "30px";
