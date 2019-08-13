@@ -18,7 +18,10 @@ html,body{
 	 color:black;
 	 text-align:center;
 	 font-size:30px;
-	 background:#f0f0f0;
+	 background-color:cyan;
+	 	animation-name:example34;
+	animation-duration:40s; 
+	animation-iteration-count:infinite;
 	 
  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	 
@@ -27,23 +30,26 @@ html,body{
 
 #imageTOP{
     
-	 background-color:cyan;
+	 background-color:#ababab;
 	 background-size:cover;
-        height:400px; 
-	animation-name:example34;
-	animation-duration:10s; 
-	animation-iteration-count:infinite;
+        height:200px; 
+
 	
 }
 
 
 @keyframes example34{
 0% {background-color: cyan;}
-20% {background-color: red;}
-30% {background-color: black;}
-50% {background-color: blue;}
-80% {background-color: green;}
-100% {background-color: pink;}
+10% {background-color: red;}
+20% {background-color: black;}
+30% {background-color: blue;}
+40% {background-color: green;}
+50% {background-color: yellow;}
+60% {background-color: grey;}
+70% {background-color: magenta;}
+80% {background-color: purple;}
+90% {background-color: violet;}
+100% {background-color: seagreen;}
 }
 .topnav {
 	-webkit-user-select:none;
