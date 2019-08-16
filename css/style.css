@@ -15,7 +15,7 @@ html,body{
 	width:100%;
 	 -webkit-user-select:none;
 	 padding:10px;
-	 color:black;
+	 color:white;
 	 text-align:center;
 	 font-size:30px;
 	 background-color:cyan;
@@ -32,9 +32,7 @@ html,body{
     
 	 background-color:#ababab;
 	 background-size:cover;
-        height:200px; 
-
-	
+        height:110px; 	
 }
 
 
@@ -144,7 +142,7 @@ color:white;
 font-size:30px;
 }.anchor1:hover{
 	color:black;
-	background:white;
+	background:#505050;
 	
 }
 
