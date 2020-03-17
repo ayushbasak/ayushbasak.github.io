@@ -1,4 +1,23 @@
 document.addEventListener("DOMContentLoaded", function() { 
+var visits = document.getElementById("visitTime");
+
+var stor = localStorage.getItem("v")
+
+if(stor != null){
+    stor = "" + (parseInt(stor)+1)
+    localStorage.setItem("v",stor);
+    visits.innerText = stor;
+}
+else{
+    stor = "0";
+    localStorage.setItem("v",stor);
+    visits.innerText = stor;
+}
+
+});
+
+
+document.addEventListener("DOMContentLoaded", function() { 
     var elem = document.getElementById("text");
     var doc = document.getElementById("div1");
     var date = new Date();
