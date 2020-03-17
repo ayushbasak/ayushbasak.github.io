@@ -1,0 +1,57 @@
+document.addEventListener("DOMContentLoaded", function() { 
+    var elem = document.getElementById("text");
+    var doc = document.getElementById("div1");
+    var date = new Date();
+    setInterval(function change(){
+        var date = new Date();
+        
+        var sec     =   "" + date.getSeconds();
+        var min     =   "" + date.getMinutes();
+        var hours   =   "" + date.getHours();
+
+        if(sec < 10)
+            sec = "0" + sec;
+        if(hours < 10)
+            hours = "0" + hours;
+        if(min < 10)
+            min = "0" + min;
+
+        var time = "#" + hours + min + sec;
+
+        elem.innerHTML = time;
+        doc.style.backgroundColor = time;
+    },1000);
+
+
+});
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    var elem = document.getElementById("h"); 
+    var doc = document.getElementById("div2");
+    var date = new Date();
+    setInterval(function change(){
+        var date = new Date();
+        
+        var hours   =   "" + date.getHours();
+        var sec     =   "" + date.getSeconds();
+        var min     =   "" + date.getMinutes();
+        var milli   =   "" + date.getMilliseconds();
+
+        if(sec < 10)
+            sec = "0" + sec;
+        if(milli < 10)
+            milli = "0" + milli;
+        milli = milli.substring(0,2); 
+        if(min < 10)
+            min = "0" + min;
+        if(hours < 10)
+            hours = "0" + hours;
+
+        var time = "#" +hours + min + sec+milli;
+        elem.innerHTML = time;
+        doc.style.backgroundColor = time;
+    },67);
+
+
+});
