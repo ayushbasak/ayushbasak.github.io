@@ -17,16 +17,15 @@ document.addEventListener("DOMContentLoaded", function() {
             min = "0" + min;
 
         var time = "#" + hours + min + sec;
-
-        elem.innerHTML = time;
+        var write = hours + ":" + min + ":" + sec;
+        elem.innerHTML = write;
         doc.style.backgroundColor = time;
     },1000);
 
-
 });
 
-
-document.addEventListener("DOMContentLoaded", function() {
+//document.addEventListener('contextmenu', event => event.preventDefault());
+document.addEventListener("DOMContentLoaded", function() { 
     var elem = document.getElementById("h"); 
     var doc = document.getElementById("div2");
     var date = new Date();
@@ -48,10 +47,11 @@ document.addEventListener("DOMContentLoaded", function() {
         if(hours < 10)
             hours = "0" + hours;
 
-        var time = "#" +hours + min + sec+milli;
-        elem.innerHTML = time;
+        var write = hours + ":" + min + ":" + sec + ":" + milli;
+        var time = "#" +hours + min + sec + milli;
+        elem.innerHTML = write;
         doc.style.backgroundColor = time;
-    },67);
+    },2);
 
 
 });
