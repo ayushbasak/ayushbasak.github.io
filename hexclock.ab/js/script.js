@@ -9,10 +9,16 @@ if(stor != null){
     visits.innerText = stor;
 }
 else{
-    stor = "0";
+    stor = "1";
     localStorage.setItem("v",stor);
     visits.innerText = stor;
 }
+
+setInterval(function (){
+    var click = document.getElementById("tick");
+    click.play();
+},1000);
+
 
 });
 
@@ -20,7 +26,9 @@ else{
 document.addEventListener("DOMContentLoaded", function() { 
     var elem = document.getElementById("text");
     var doc = document.getElementById("div1");
-    var date = new Date();
+
+    var pep = document.getElementById("pep");
+    var hoh = document.getElementById("hoh");
     setInterval(function change(){
         var date = new Date();
         
@@ -28,6 +36,10 @@ document.addEventListener("DOMContentLoaded", function() {
         var min     =   "" + date.getMinutes();
         var hours   =   "" + date.getHours();
 
+        if(sec == 0)
+            pep.play();
+        if(min == 0)
+            hoh.play();
         if(sec < 10)
             sec = "0" + sec;
         if(hours < 10)
@@ -47,7 +59,7 @@ document.addEventListener("DOMContentLoaded", function() {
 document.addEventListener("DOMContentLoaded", function() { 
     var elem = document.getElementById("h"); 
     var doc = document.getElementById("div2");
-    var date = new Date();
+
     setInterval(function change(){
         var date = new Date();
         
@@ -55,6 +67,8 @@ document.addEventListener("DOMContentLoaded", function() {
         var sec     =   "" + date.getSeconds();
         var min     =   "" + date.getMinutes();
         var milli   =   "" + date.getMilliseconds();
+
+        setTimeout(function(){},35);
 
         if(sec < 10)
             sec = "0" + sec;
@@ -70,7 +84,7 @@ document.addEventListener("DOMContentLoaded", function() {
         var time = "#" +hours + min + sec + milli;
         elem.innerHTML = write;
         doc.style.backgroundColor = time;
-    },2);
+    },20);
 
 
 });
