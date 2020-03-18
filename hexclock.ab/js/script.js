@@ -68,7 +68,6 @@ document.addEventListener("DOMContentLoaded", function() {
         var min     =   "" + date.getMinutes();
         var milli   =   "" + date.getMilliseconds();
 
-        setTimeout(function(){},35);
 
         if(sec < 10)
             sec = "0" + sec;
