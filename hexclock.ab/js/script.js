@@ -1,7 +1,9 @@
 document.addEventListener("DOMContentLoaded", function() { 
 var visits = document.getElementById("visitTime");
-
+var meatspin = document.getElementById("meatspin");
 var stor = localStorage.getItem("v")
+
+setTimeout(function(){meatspin.play();},13500);
 
 if(stor != null){
     stor = "" + (parseInt(stor)+1)
@@ -38,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         if(sec == 0)
             pep.play();
-        if(min == 0)
+        if(min == 0 && sec == 0)
             hoh.play();
         if(sec < 10)
             sec = "0" + sec;
