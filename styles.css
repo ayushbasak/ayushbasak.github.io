@@ -1,0 +1,88 @@
+html,body {
+  margin: 0;
+  font-family: 'Roboto';
+  font-size: 20px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+.header {
+  /* flex: 0 1 auto; */
+}
+
+.title p{
+  font-weight: 100;
+  text-align: center;
+  font-size: 2rem;
+  padding: 0;
+  margin: 0.5rem auto;
+}
+
+span{
+  font-weight: 400;
+}
+
+.socials {
+  margin: 0 auto;
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.socials img{
+  width: 1.5rem;
+}
+
+.navbar nav{
+  margin: 5px auto;
+  width: 80%;
+  display: flex;
+  font-size: 0.75rem;
+  justify-content: space-evenly;
+  border: 1px solid #000;
+  border-radius: 2rem;
+  padding: 0.5rem 0.2rem;
+}
+.navbar nav a{
+  text-decoration: none;
+  color: #000;
+}
+
+.main {
+  /* flex: 0 1 auto; */
+  width: 90%;
+  overflow-y: scroll;
+  margin: 5px auto;
+  border: 1px solid black;
+  border-radius: 0.5rem;
+}
+
+.main p{
+  padding: 0.5rem;
+}
+
+.main .content:target{
+  display: block;
+}
+
+.hidden{
+  display: none;
+}
+
+.footer {
+  /* flex: 0 1 5%; */
+  height: 5%;
+  bottom: 0;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+}
+
+.footer p{
+  margin: 10px 10px;
+  font-size: 0.5rem;
+}
