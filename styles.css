@@ -2,6 +2,7 @@ html,body {
   margin: 0;
   font-family: 'Roboto';
   font-size: 20px;
+  color: #000;
 }
 .container {
   display: flex;
@@ -55,6 +56,7 @@ span{
 .main {
   /* flex: 0 1 auto; */
   width: 90%;
+  height: 100%;
   overflow-y: scroll;
   margin: 5px auto;
   border: 1px solid black;
@@ -64,9 +66,29 @@ span{
 .main p{
   padding: 0.5rem;
 }
-
+/* 
 .main .content:target{
   display: block;
+} */
+
+.project-container{
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 20px;
+}
+
+.project-container .project{
+  min-height: 20%;
+  font-weight: 400;
+  border-radius: 0.5rem;
+  border: 1px solid black;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.project-container .project img{
+  width: 80%;
+  margin: 0 auto;
 }
 
 .hidden{
@@ -79,10 +101,27 @@ span{
   bottom: 0;
   background-color: #000;
   color: #fff;
-  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
 .footer p{
   margin: 10px 10px;
   font-size: 0.5rem;
+}
+
+@media screen and (min-width: 800px) {
+  .container {
+    background: #fcfcfc;
+    margin: 0 auto;
+    max-width: 800px;
+  }
+  .title p{
+    font-weight: 100;
+    text-align: center;
+    font-size: 2rem;
+    padding: 0;
+    margin: 0.5rem auto;
+  }
 }
