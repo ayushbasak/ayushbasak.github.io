@@ -2,6 +2,7 @@ html,body {
   margin: 0;
   font-family: 'Roboto';
   font-size: 20px;
+  background: white;
   color: #000;
 }
 .container {
@@ -9,10 +10,22 @@ html,body {
   flex-direction: column;
   justify-content: space-between;
   height: 100vh;
+  filter: grayscale(1);
 }
 
-.header {
-  /* flex: 0 1 auto; */
+.theme{
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  z-index: +1;
+}
+.theme img{
+  width: 1.5rem;
+  cursor: pointer;
+  transition: all .3s ease;
+}
+.theme img:hover{
+  rotate: 180deg;
 }
 
 .title p{
@@ -91,6 +104,14 @@ span{
   margin: 0 auto;
 }
 
+.project-container .project a{
+  text-decoration: none;
+  color: #000;
+}
+.project-container .project a:hover{
+  text-decoration: underline;
+}
+
 .hidden{
   display: none;
 }
@@ -108,7 +129,7 @@ span{
 
 .footer p{
   margin: 10px 10px;
-  font-size: 0.5rem;
+  font-size: 0.7rem;
 }
 
 @media screen and (min-width: 800px) {
