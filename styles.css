@@ -5,6 +5,7 @@ html,body {
   background: white;
   background-color: #fff;
   color: #000;
+  transition: all 0.3s ease;
 }
 .container {
   display: flex;
@@ -51,6 +52,9 @@ span{
 .socials img{
   width: 1.5rem;
 }
+.socials img:hover{
+  filter: drop-shadow(0 0 0.1rem #111);
+}
 
 .navbar nav{
   margin: 5px auto;
@@ -59,12 +63,15 @@ span{
   font-size: 0.75rem;
   justify-content: space-evenly;
   border: 1px solid #000;
-  border-radius: 2rem;
+  /* border-radius: 2rem; */
   padding: 0.5rem 0.2rem;
 }
 .navbar nav a{
   text-decoration: none;
   color: #000;
+}
+.navbar nav a:hover{
+  text-decoration: underline;
 }
 
 .main {
@@ -74,7 +81,7 @@ span{
   overflow-y: scroll;
   margin: 5px auto;
   border: 1px solid black;
-  border-radius: 0.5rem;
+  /* border-radius: 0.5rem; */
 }
 
 .main p{
@@ -94,7 +101,7 @@ span{
 .project-container .project{
   min-height: 20%;
   font-weight: 400;
-  border-radius: 0.5rem;
+  /* border-radius: 0.5rem; */
   border: 1px solid black;
   text-align: center;
   margin: 1rem 0;
@@ -135,7 +142,8 @@ span{
 
 @media screen and (min-width: 800px) {
   .container {
-    background: #fcfcfc;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
     margin: 0 auto;
     max-width: 800px;
   }
